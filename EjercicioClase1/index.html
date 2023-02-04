@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!--se definen todas las configuraciones globales del documento en head-->
+  <head>
+    <!--sirve para detectar tildes-->
+    <meta charset="UTF-8" />
+    <!--Esto le da al navegador instrucciones sobre cómo controlar las dimensiones y la escala de la página.
+
+    La width=device-widthparte establece el ancho de la página para seguir el ancho de pantalla del dispositivo
+     (que variará según el dispositivo).
+    
+     La initial-scale=1.0parte establece el nivel de zoom inicial cuando el navegador carga la página por primera vez.
+
+     Nota:en resumen el viewporte sirve para que el contenido se ajuste a la pantalla
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./resurces/css/styles.css" />
+    <!--no se deben poner 2 elementos h1 en un mismo docuemnto .html-->
+  </head>
+  <body class="contenedor">
+    <!--hay elementos que tienen disposición de posicionamiento en linea y hay otros que son en bloque
+    p=en bloque
+    href=en linea
+    -->
+    <!--con CSS se puede manipular la forma en la que el navegador renderiza las cosas-->
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore quis
+      laboriosam velit magni labore a harum accusantium modi dolor sed culpa,
+      natus dolores laudantium explicabo ipsa quae? Possimus, veritatis nostrum!
+    </p>
+    <h1>Hola mundo, este es mi primer proyecto</h1>
+    <h2 id="subtitulo">Hola mundo</h2>
+    <h3 class="anidado">Hola mundo!</h3>
+    <h4 class="estilo">Hola mundo!</h4>
+  </body>
+</html>

@@ -1,0 +1,30 @@
+/* El selectror especifico siempre tiene prioridad */
+/*selector de elemento/etiqueta*/
+h1{
+   color: red; 
+}
+
+/*selector de id usar preferiblemente solo para funcionalidades en javascript*/
+#subtitulo {
+    font-family: Arial, Helvetica, sans-serif;
+    color: blue;
+}
+/*selector de clase*/
+.estilo {
+    color: yellow !important;
+}
+.bold{
+    font-weight: bold;
+}
+.estilo2 {
+    color: #f0e
+}
+
+/*esto es un contenedor anidado dentro de contenedor va a tener
+las propiedades de estilo*/
+.contenedor .anidado{
+color:blueviolet;
+}
+
+/* "."  = classs*/
+/* "#" = id  */
