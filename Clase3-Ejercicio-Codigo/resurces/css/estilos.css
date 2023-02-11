@@ -1,0 +1,18 @@
+#titulo{
+    color:red
+}
+h2{
+    color: green;
+
+}
+/*selector anidado*/
+.contenedor-imagen img{
+    width: 250px;
+    height: 300px;
+}
+.contenedor-imagen{
+    background-color: #000;
+    border: 20px solid red;
+    padding: 20px 10px 30px 50px;
+    margin: 20px 10px 30px 50px;
+}
