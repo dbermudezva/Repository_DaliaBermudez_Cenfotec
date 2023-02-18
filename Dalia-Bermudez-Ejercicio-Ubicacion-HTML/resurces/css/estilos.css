@@ -1,0 +1,156 @@
+.estilo_oscuro{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: white;
+    padding-bottom: 5px;
+    border-color: black;
+    margin-top: 0px;
+}
+.estilo_claro {
+    background-color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: black;
+    padding-bottom: 50px;
+    margin-top: 80px;
+}
+.contenedor {
+    padding-left: 80px;
+    padding-top: 5px;
+}
+.contenedor3{
+padding-left: 100px;
+padding-top: 5px;
+}
+.contenedor3_naranja {
+    padding-left: 20px;
+    padding-top: 5px;
+}
+body {
+    margin-top: 0%;
+}
+
+h2 {
+    margin-top: 0%;
+}
+.espaciado_derecha_largo{
+    padding-right: 80px;
+}
+.espaciado_derecha_mediano {
+    padding-right: 150px;
+}
+.espaciado_derecha_corto {
+    padding-right: 25px;
+}
+.espaciado_izquierda_corto {
+    padding-left: 75px;
+}
+.text_decoration_navbar{
+text-decoration:none;
+}
+
+
+.estilo_letra_grande_container2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    line-height:10px;
+}
+
+.estilo_letra_grande_container1_arial {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 10px;
+}
+.estilo_letra_grande_container3 {
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    line-height: 10px;
+}
+.estilo_letra_grande_container3_arial {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75px;
+    font-weight: bold;
+    line-height: 10px;
+}
+/*Selector descendente*/
+.estilo_letra_grande_container3_arial p span{
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-underline-offset: 18px;
+}
+
+.estilo_letra_grande_container1_times {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 10px;
+}
+
+.estilo_letra_titulo_navbar{
+font-family: Arial, Helvetica, sans-serif;
+font-size: 35px;
+color: black;
+font-weight: bold;
+}
+.estilo_letra_subtitulo_navbar {
+font-family: Arial, Helvetica, sans-serif;
+font-size: 20px;
+color: black;
+font-weight: bold;
+}
+.estilo_letra_sin_negrita {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: black;
+    font-weight: lighter;
+}
+.espaciado_abajo_largo{
+    margin-bottom: 300px;
+}
+.espaciado_abajo_mediano {
+    padding-bottom: 130px;
+}
+.espaciado_abajo_corto {
+    padding-bottom: 35px;
+}
+.espaciado_izquierda{
+    padding-left: 800px;
+}
+.estilo_transparente{
+    color: darkgrey;
+}
+#interlineado{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+.estilo_times{
+    font-family: 'Times New Roman', Times, serif;
+}
+#span_color_green
+{
+color: greenyellow;
+}
+
+.estilo_letra_conteiner3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+}
+
+.color_naranja
+{
+    color: orangered;
+}
+.subrayado_color_naranja
+{
+    text-decoration-color: orange;
+}
+.img{
+width: 100%;
+height: auto;
+}
