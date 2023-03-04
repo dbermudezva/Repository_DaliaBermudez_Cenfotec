@@ -1,0 +1,37 @@
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /*vh es la medida completa de la pantalla*/
+    height: 100vh;
+    justify-content: space-evenly;
+    /*aplica el degradado de fondo del container*/
+    background: rgb(253,29,29);
+    background: linear-gradient(90deg, rgba(253,29,29,1) 30%, rgba(252,133,69,1) 100%);
+    align-items: center;
+}
+
+.item {
+    padding: 20px 30px;
+    margin: 10px 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 380px;
+    /*alinea los textos al centro*/
+    text-align: center;
+}
+
+.letranumeros{
+    color: rgba(255, 255, 255, 255);
+    font-size: 60px;
+}
+
+.letras{
+color: rgba(255, 255, 255, 255);
+font-size: 30px;
+}
+
+.quitamargin{
+    /*quita el margen del body por defecto*/
+    margin: 0px;
+}
