@@ -1,0 +1,17 @@
+@import 'variables'
+@import 'mixin'
+@import 'extend'
+.main-container
+    display: flex
+    justify-content: center
+    align-items: start
+    .item
+        @extend %itemshadow
+        background-color: $generalbg
+        h2
+            @include text($titlecolor,20px,800)
+        p
+            @include text($bodyColor,16px,100)
+.cards-container
+    height: 100vh
+    background-color: #bdbdbd
