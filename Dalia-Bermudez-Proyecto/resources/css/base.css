@@ -1,0 +1,62 @@
+.backgroundlogin {
+  background-color: #1C1F22;
+}
+
+.stylecardlogin {
+  border-radius: 20px !important;
+  width: 32rem !important;
+  border: 0.5px solid #2C3035 !important;
+  background-color: #17191c !important;
+}
+
+.titulologin {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #E3E5E8;
+  margin: 0px 0px 2px;
+}
+
+.letrascard {
+  font-size: 0.888875rem;
+  line-height: 1.1883;
+  color: #93999F;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+
+.secciontitulocard {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.alineadoizq {
+  text-align: left !important;
+}
+
+.containerbuttons {
+  display: flex;
+  width: 90%;
+  min-height: 39px;
+  font-size: 0.888875rem;
+  line-height: 1.1883;
+  border-radius: 50px;
+  justify-content: center;
+  align-items: center;
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+}
+
+.estilobuttonsinginnoapple {
+  background: rgb(37, 40, 45);
+  color: rgb(227, 229, 232);
+  border: 1px solid rgb(44, 48, 53);
+  transition: border-color 200ms ease-in-out 0s;
+  margin-bottom: 4px;
+}
+
+.estilobuttonsinginapple {
+  background: #000000;
+  color: white;
+  margin-top: 5px;
+}/*# sourceMappingURL=base.css.map */
