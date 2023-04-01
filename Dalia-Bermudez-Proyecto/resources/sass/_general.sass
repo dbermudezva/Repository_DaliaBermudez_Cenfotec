@@ -6,8 +6,8 @@
     background-color: $colorbackgroundlogin
 .backgroundownload
     background-color: $colornegro
-// Containers
 
+// Containers
 .containerletrasdownloadestilo
     @include margen(0px,auto,auto, 100px)
     @include aling-text(center)
@@ -16,9 +16,9 @@
 .containerbuttons
     display: flex
     @include alto-ancho(100%,auto)
+    @include line-height(1.1883)
     min-height: 39px
     font-size: 0.988875rem
-    @include line-height(1.1883)
     border-radius: 50px
     justify-content: center
     align-items: center
@@ -26,13 +26,13 @@
     -webkit-box-pack: center
 
 .containerdownloads
+    @include margen(0px,0px,auto,auto)
     grid-template-columns: 240px auto
     gap: 20px
     width: 100%
     max-width: 960px
-    @include margen(0px,0px,auto,auto)
     display: grid
-    padding: 40px
+    @include padding(40px,40px,40px,40px)
     display: flex
     position: sticky
     top: 102px
@@ -72,11 +72,10 @@
     color: $colorblanco
 
 .containersecuritycontenido
-    padding-left: 10px
     display: flex
     flex-direction: column
     @include aling-text(left)
-    padding: 60px 20px
+    @include padding(60px,60px,30px,20px)
 
 //Finaliza seccion containers
 
@@ -107,14 +106,14 @@
 .estilolistasecurity
     display: flex
     color: rgb(250, 250, 250)
-    padding: 10px 20px
+    @include padding(10px,10px,20px,20px)
     border-radius: 10px
     text-decoration: none
 
 .estilolistaelementosecurity
     display: flex
     color: rgb(250, 250, 250)
-    padding: 10px 20px
+    @include padding(10px,10px,20px,20px)
     border-radius: 10px
     text-decoration: none
 
@@ -192,7 +191,7 @@
     background: rgb(28, 31, 34)
     color: rgb(227, 229, 232)
     border-radius: 0.625rem
-    padding: 12px 2px
+    @include padding(12px,12px,2px,2px)
     font-size: 0.888875rem
     font-weight: 400
     @include line-height(1.5)
@@ -268,11 +267,11 @@
     background-color: $nav-menu-background !important
 
 .custom-drop
-    background: rgb(0, 0, 0)
-    padding: 24px 24px 10px
     @include alto-ancho(250px,auto)
+    background: $colornegro
+    @include padding(24px,24px,24px,10px)
     border-radius: 10px
-    border: 1px solid rgba(255, 255, 255, 0.15)
+    border: 1px solid $color-gray-300
     color: $color-white
 
 .accordion-button::after
