@@ -1,5 +1,6 @@
 @import 'variables'
 @import 'extend'
+@import 'mixin'
 
 .backgroundlogin
     background-color: $colorbackgroundlogin
@@ -7,21 +8,17 @@
     background-color: $colornegro
 // Containers
 
-.continer-inputs
-    margin-top: 10px
-
 .containerletrasdownloadestilo
-    margin: 0px auto 100px
-    text-align: center
-    width: 550px
-    height: 29px
+    @include margen(0px,auto,auto, 100px)
+    @include aling-text(center)
+    @include alto-ancho(550px,29px)
 
 .containerbuttons
     display: flex
-    width: 100%
+    @include alto-ancho(100%,auto)
     min-height: 39px
     font-size: 0.988875rem
-    line-height: 1.1883
+    @include line-height(1.1883)
     border-radius: 50px
     justify-content: center
     align-items: center
@@ -33,7 +30,7 @@
     gap: 20px
     width: 100%
     max-width: 960px
-    margin: 0px auto
+    @include margen(0px,0px,auto,auto)
     display: grid
     padding: 40px
     display: flex
@@ -44,7 +41,7 @@
 .secciontitulocard
     display: flex
     flex-direction: column
-    margin-bottom: 20px
+    @include margen(auto,20px,auto,auto)
 
 .containericon
     box-shadow: inset 0 0 2px hsla(0,0%,100%,.2), inset 0 -1px 3px rgba(0,0,0,.8)
@@ -53,20 +50,18 @@
     display: flex
     align-items: center
     justify-content: center
-    margin-bottom: 12px
+    @include margen(auto,12px,auto,auto)
 
 .containersecurity
-    // display: flex
-    // flex-direction: column
-    text-align: center
+    @include aling-text(center)
     -webkit-box-align: center
     align-items: center
     color-scheme: dark
-    margin-top: 120px
+    @include margen(120px,auto,auto,auto)
 
 .containerlistasecurity
     display: flex
-    height: fit-content
+    @include alto-ancho(auto,fit-content)
     position: sticky
     top: 102px
     left: 30px
@@ -80,34 +75,34 @@
     padding-left: 10px
     display: flex
     flex-direction: column
-    text-align: left
+    @include aling-text(left)
     padding: 60px 20px
 
 //Finaliza seccion containers
 
 //estilos letras
 .titulologin
+    @include line-height(1.5)
     font-size: 1.5rem
-    line-height: 1.5
     color: $colortitulologin
-    margin: 0px 0px 2px
+    @include margen(0px,0px,0px,2px)
 
 .titulodownload
     font-size: 1.5em
     font-style: bold
     font-weight: 700
     color: $colortitulologin
-    margin: 0px 0px 2px
+    @include margen(0px,0px,0px,2px)
 
 .estilonegrita
     font-style: bold
 
 .letrascard
     font-size: 0.888875rem
-    line-height: 1.1883
+    @include line-height(1.1883)
     color: $colorletrascard
     font-weight: normal
-    margin-bottom: 0px
+    @include margen(auto,0px,auto,auto)
 
 .estilolistasecurity
     display: flex
@@ -140,13 +135,13 @@
 
 //espaciado
 .espaciadoderecha
-    margin-left: 15px
+    @include margen(auto,auto,15px,auto)
 
 .margintoplarge
-    margin-top: 200px
+    @include margen(200px,auto,auto,auto)
 
 .margintopmedium
-    margin-top: 50px
+    @include margen(50px,auto,auto,auto)
 //finaliza espaciado
 
 //estilo botones
@@ -154,7 +149,7 @@
     background: rgb(37, 40, 45)
     color: rgb(227, 229, 232)
     border: 1px solid rgb(44, 48, 53)
-    margin-bottom: 4px
+    @include margen(auto,4px,auto,auto)
 
 .estiloborderbutton
     border-bottom-color: $colorchoicenavbar !important
@@ -163,14 +158,14 @@
 .estilobuttonsinginapple
     background: $colornegro
     color: $colorblanco
-    margin-top: 6px
+    @include margen(6px,auto,auto,auto)
     border: 1px solid rgb(44, 48, 53)
 
 .estilobuttonsingle
     background: rgb(37, 40, 45)
     color: rgb(227, 229, 232)
     border: 1px solid rgb(44, 48, 53)
-    margin-top: 6px
+    @include margen(6px,auto,auto,auto)
 
 .estilobotonesprincipales
     display: flex
@@ -178,12 +173,11 @@
     color: $colorblanco
     font-size: 15px !important
     max-height: 42px
-    width: 100%
+    @include alto-ancho(100% ,38px)
     -webkit-box-align: center
     align-items: center
     -webkit-box-pack: center
     justify-content: center
-    height: 38px
 //finaliza estilo botones
 
 .stylecardlogin
@@ -192,8 +186,8 @@
     background-color: $colorbackgroundlogincard !important
 
 .estiloinput
-    width: 100%
-    margin-top: 10px
+    @include alto-ancho(100% ,auto)
+    @include margen(10px,auto,auto,auto)
     border: 1px solid rgb(44, 48, 53)
     background: rgb(28, 31, 34)
     color: rgb(227, 229, 232)
@@ -201,12 +195,12 @@
     padding: 12px 2px
     font-size: 0.888875rem
     font-weight: 400
-    line-height: 1.5
+    @include line-height(1.5)
 
 .estilocardimg
     ms-flex-align: stretch
     align-items: stretch
-    margin-bottom: 10px
+    @include margen(auto,10px,auto,auto)
     border-radius: 36px
     max-width: 100%
 
@@ -221,9 +215,9 @@
 .estiloforgotpassowrod
     margin-top: 10px !important
     color: rgb(147, 153, 159)
-    text-align: center
+    @include aling-text(center)
     font-size: 0.888875rem
-    line-height: 1.1883
+    @include line-height(1.1883)
 
 .gradient
     background: -webkit-linear-gradient(#F5514D, #EE8493,#6F8FB5)
@@ -276,7 +270,7 @@
 .custom-drop
     background: rgb(0, 0, 0)
     padding: 24px 24px 10px
-    width: 250px
+    @include alto-ancho(250px,auto)
     border-radius: 10px
     border: 1px solid rgba(255, 255, 255, 0.15)
     color: $color-white
@@ -290,7 +284,7 @@
 .accordion-button
     color: #ffffff !important
     text-align: left !important
-    background-color: #0000 !important
+    background-color: $colornegro !important
     border: 0 !important
     border-radius: 0 !important
 
