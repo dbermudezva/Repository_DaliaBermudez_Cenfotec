@@ -7,45 +7,43 @@
   width: 100%;
 }
 
+.contact-button {
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 4px 18px;
+  transition: color 200ms ease-in-out 0s, background-color 200ms ease-in-out 0s, border-color 200ms ease-in-out 0s;
+  min-width: 20%;
+  min-height: 50px;
+}
+
+.seeall-button {
+  border-radius: 0.5rem;
+  text-decoration: none;
+  padding: 8px 18px;
+  transition: color 200ms ease-in-out 0s, background-color 200ms ease-in-out 0s, border-color 200ms ease-in-out 0s;
+  min-width: 9%;
+  min-height: 50px;
+  margin: 20px 0px;
+}
+
 .backgroundlogin {
   background-color: #1C1F22;
 }
 
-.stylecardlogin {
-  border-radius: 20px !important;
-  width: 32rem !important;
-  border: 0.5px solid #2C3035 !important;
-  background-color: #17191c !important;
-  height: 38rem !important;
+.backgroundownload {
+  background-color: #000000;
 }
 
-.titulologin {
-  font-size: 1.5rem;
-  line-height: 1.5;
-  color: #E3E5E8;
-  margin: 0px 0px 2px;
+.continer-inputs {
+  margin-top: 10px;
 }
 
-.letrascard {
-  font-size: 0.888875rem;
-  line-height: 1.1883;
-  color: #93999F;
-  font-weight: normal;
-  margin-bottom: 0px;
-}
-
-.secciontitulocard {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-}
-
-.seccionsingup {
-  text-align: center !important;
-}
-
-.alineadoizq {
-  text-align: left !important;
+.containerletrasdownloadestilo {
+  margin: 0px auto 100px;
+  text-align: center;
+  width: 550px;
+  height: 29px;
 }
 
 .containerbuttons {
@@ -61,11 +59,146 @@
   -webkit-box-pack: center;
 }
 
+.containerdownloads {
+  grid-template-columns: 240px auto;
+  gap: 20px;
+  width: 100%;
+  max-width: 960px;
+  margin: 0px auto;
+  display: grid;
+  padding: 40px;
+  display: flex;
+  position: sticky;
+  top: 102px;
+  left: 30px;
+}
+
+.secciontitulocard {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.containericon {
+  box-shadow: inset 0 0 2px hsla(0, 0%, 100%, 0.2), inset 0 -1px 3px rgba(0, 0, 0, 0.8);
+  -webkit-backdrop-filter: blur(24px);
+          backdrop-filter: blur(24px);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.containersecurity {
+  text-align: center;
+  align-items: center;
+  color-scheme: dark;
+  margin-top: 120px;
+}
+
+.containerlistasecurity {
+  display: flex;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: sticky;
+  top: 102px;
+  left: 30px;
+}
+
+.link {
+  color: white;
+}
+
+.link:hover {
+  color: white;
+}
+
+.containersecuritycontenido {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 60px 20px;
+}
+
+.titulologin {
+  font-size: 1.5rem;
+  line-height: 1.5;
+  color: #E3E5E8;
+  margin: 0px 0px 2px;
+}
+
+.titulodownload {
+  font-size: 1.5em;
+  font-style: bold;
+  font-weight: 700;
+  color: #E3E5E8;
+  margin: 0px 0px 2px;
+}
+
+.estilonegrita {
+  font-style: bold;
+}
+
+.letrascard {
+  font-size: 0.888875rem;
+  line-height: 1.1883;
+  color: #93999F;
+  font-weight: normal;
+  margin-bottom: 0px;
+}
+
+.estilolistasecurity {
+  display: flex;
+  color: rgb(250, 250, 250);
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.estilolistaelementosecurity {
+  display: flex;
+  color: rgb(250, 250, 250);
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.seccionsingup {
+  text-align: center !important;
+}
+
+.alineadoizq {
+  text-align: left !important;
+}
+
+.alineadocentro {
+  text-align: center !important;
+}
+
+.espaciadoderecha {
+  margin-left: 15px;
+}
+
+.margintoplarge {
+  margin-top: 200px;
+}
+
+.margintopmedium {
+  margin-top: 50px;
+}
+
 .estilobuttonsinginnoapple {
   background: rgb(37, 40, 45);
   color: rgb(227, 229, 232);
   border: 1px solid rgb(44, 48, 53);
   margin-bottom: 4px;
+}
+
+.estiloborderbutton {
+  border-bottom-color: #D7D7D7 !important;
+  border-bottom: 2px solid;
 }
 
 .estilobuttonsinginapple {
@@ -82,12 +215,22 @@
   margin-top: 6px;
 }
 
-.espaciadoderecha {
-  margin-left: 15px;
+.estilobotonesprincipales {
+  display: flex;
+  background-color: #FF2D60 !important;
+  color: white;
+  font-size: 15px !important;
+  max-height: 42px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  height: 38px;
 }
 
-.continer-inputs {
-  margin-top: 10px;
+.stylecardlogin {
+  border-radius: 20px !important;
+  border: 0.5px solid #2C3035 !important;
+  background-color: #17191c !important;
 }
 
 .estiloinput {
@@ -103,6 +246,24 @@
   line-height: 1.5;
 }
 
+.estilocardimg {
+  ms-flex-align: stretch;
+  align-items: stretch;
+  margin-bottom: 10px;
+  border-radius: 36px;
+  max-width: 100%;
+}
+
+.estilobotonescondido {
+  visibility: hidden;
+}
+
+.estilocardimg:hover {
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+  visibility: visible;
+}
+
 .estiloforgotpassowrod {
   margin-top: 10px !important;
   color: rgb(147, 153, 159);
@@ -111,22 +272,36 @@
   line-height: 1.1883;
 }
 
-.estilobotonesprincipales {
-  display: flex;
-  background-color: #FF2D60 !important;
-  color: white;
-  font-size: 15px !important;
-  max-height: 42px;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  height: 38px;
+.gradient {
+  background: -webkit-linear-gradient(#F5514D, #EE8493, #6F8FB5);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 1.5em;
+  font-style: bold;
+  font-weight: 700;
 }
 
 .general-button {
   background-color: rgb(255, 45, 96);
   color: rgb(250, 250, 250);
   border: none;
+}
+
+.contact-button {
+  background-color: rgb(255, 45, 96);
+  color: rgb(250, 250, 250);
+  border: none;
+}
+
+.seeall-button {
+  background-color: transparent;
+  color: rgb(250, 250, 250);
+  border: none;
+  border: 1px solid white;
+}
+
+.seeall-button:hover {
+  background-color: rgb(255, 45, 96);
 }
 
 .secondary-button {
@@ -156,6 +331,27 @@
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.15);
   color: rgb(250, 250, 250);
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 448 512'><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.--><path d='M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32V224H48c-17.7 0-32 14.3-32 32s14.3 32 32 32H192V432c0 17.7 14.3 32 32 32s32-14.3 32-32V288H400c17.7 0 32-14.3 32-32s-14.3-32-32-32H256V80z'/></svg>") !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 448 512'><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc.--><path d='M432 256c0 17.7-14.3 32-32 32L48 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l352 0c17.7 0 32 14.3 32 32z'/></svg>") !important;
+}
+
+.accordion-button {
+  color: #ffffff !important;
+  text-align: left !important;
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+}
+
+.accordion-item {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: none !important;
 }
 
 @media screen and (min-width: 1400px) {

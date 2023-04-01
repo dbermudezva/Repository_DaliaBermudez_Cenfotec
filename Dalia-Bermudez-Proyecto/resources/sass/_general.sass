@@ -3,38 +3,18 @@
 
 .backgroundlogin
     background-color: $colorbackgroundlogin
+.backgroundownload
+    background-color: $colornegro
+// Containers
 
-.stylecardlogin
-    border-radius: 20px !important
-    width: 32rem !important
-    border: 0.5px solid $colorbordercard !important
-    background-color: $colorbackgroundlogincard !important
-    height: 38rem !important
+.continer-inputs
+    margin-top: 10px
 
-.titulologin
-    font-size: 1.5rem
-    line-height: 1.5
-    color: $colortitulologin
-    margin: 0px 0px 2px
-
-.letrascard
-    font-size: 0.888875rem
-    line-height: 1.1883
-    color: $colorletrascard
-    font-weight: normal
-    margin-bottom: 0px
-
-.secciontitulocard
-    display: flex
-    flex-direction: column
-    margin-bottom: 20px
-
-.seccionsingup
-    // flex-direction: row
-    text-align: center !important
-
-.alineadoizq
-    text-align: left !important
+.containerletrasdownloadestilo
+    margin: 0px auto 100px
+    text-align: center
+    width: 550px
+    height: 29px
 
 .containerbuttons
     display: flex
@@ -48,11 +28,137 @@
     -webkit-box-align: center
     -webkit-box-pack: center
 
+.containerdownloads
+    grid-template-columns: 240px auto
+    gap: 20px
+    width: 100%
+    max-width: 960px
+    margin: 0px auto
+    display: grid
+    padding: 40px
+    display: flex
+    position: sticky
+    top: 102px
+    left: 30px
+
+.secciontitulocard
+    display: flex
+    flex-direction: column
+    margin-bottom: 20px
+
+.containericon
+    box-shadow: inset 0 0 2px hsla(0,0%,100%,.2), inset 0 -1px 3px rgba(0,0,0,.8)
+    backdrop-filter: blur(24px)
+    border-radius: 16px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 12px
+
+.containersecurity
+    // display: flex
+    // flex-direction: column
+    text-align: center
+    -webkit-box-align: center
+    align-items: center
+    color-scheme: dark
+    margin-top: 120px
+
+.containerlistasecurity
+    display: flex
+    height: fit-content
+    position: sticky
+    top: 102px
+    left: 30px
+
+.link
+    color: $colorblanco
+.link:hover
+    color: $colorblanco
+
+.containersecuritycontenido
+    padding-left: 10px
+    display: flex
+    flex-direction: column
+    text-align: left
+    padding: 60px 20px
+
+//Finaliza seccion containers
+
+//estilos letras
+.titulologin
+    font-size: 1.5rem
+    line-height: 1.5
+    color: $colortitulologin
+    margin: 0px 0px 2px
+
+.titulodownload
+    font-size: 1.5em
+    font-style: bold
+    font-weight: 700
+    color: $colortitulologin
+    margin: 0px 0px 2px
+
+.estilonegrita
+    font-style: bold
+
+.letrascard
+    font-size: 0.888875rem
+    line-height: 1.1883
+    color: $colorletrascard
+    font-weight: normal
+    margin-bottom: 0px
+
+.estilolistasecurity
+    display: flex
+    color: rgb(250, 250, 250)
+    padding: 10px 20px
+    border-radius: 10px
+    text-decoration: none
+
+.estilolistaelementosecurity
+    display: flex
+    color: rgb(250, 250, 250)
+    padding: 10px 20px
+    border-radius: 10px
+    text-decoration: none
+
+//finaliza estilos de letras
+
+//alineado
+.seccionsingup
+    // flex-direction: row
+    text-align: center !important
+
+.alineadoizq
+    text-align: left !important
+
+.alineadocentro
+    text-align: center !important
+
+//finaliza alineado
+
+//espaciado
+.espaciadoderecha
+    margin-left: 15px
+
+.margintoplarge
+    margin-top: 200px
+
+.margintopmedium
+    margin-top: 50px
+//finaliza espaciado
+
+//estilo botones
 .estilobuttonsinginnoapple
     background: rgb(37, 40, 45)
     color: rgb(227, 229, 232)
     border: 1px solid rgb(44, 48, 53)
     margin-bottom: 4px
+
+.estiloborderbutton
+    border-bottom-color: $colorchoicenavbar !important
+    border-bottom: 2px solid
 
 .estilobuttonsinginapple
     background: $colornegro
@@ -66,11 +172,24 @@
     border: 1px solid rgb(44, 48, 53)
     margin-top: 6px
 
-.espaciadoderecha
-    margin-left: 15px
+.estilobotonesprincipales
+    display: flex
+    background-color: $colorbuttonlogin !important
+    color: $colorblanco
+    font-size: 15px !important
+    max-height: 42px
+    width: 100%
+    -webkit-box-align: center
+    align-items: center
+    -webkit-box-pack: center
+    justify-content: center
+    height: 38px
+//finaliza estilo botones
 
-.continer-inputs
-    margin-top: 10px
+.stylecardlogin
+    border-radius: 20px !important
+    border: 0.5px solid $colorbordercard !important
+    background-color: $colorbackgroundlogincard !important
 
 .estiloinput
     width: 100%
@@ -84,6 +203,21 @@
     font-weight: 400
     line-height: 1.5
 
+.estilocardimg
+    ms-flex-align: stretch
+    align-items: stretch
+    margin-bottom: 10px
+    border-radius: 36px
+    max-width: 100%
+
+.estilobotonescondido
+    visibility: hidden
+
+.estilocardimg:hover
+    -webkit-backdrop-filter: blur(24px)
+    backdrop-filter: blur(24px)
+    visibility: visible
+
 .estiloforgotpassowrod
     margin-top: 10px !important
     color: rgb(147, 153, 159)
@@ -91,24 +225,36 @@
     font-size: 0.888875rem
     line-height: 1.1883
 
-.estilobotonesprincipales
-    display: flex
-    background-color: $colorbuttonlogin !important
-    color: $colorblanco
-    font-size: 15px !important
-    max-height: 42px
-    width: 100%
-    -webkit-box-align: center
-    align-items: center
-    -webkit-box-pack: center
-    justify-content: center
-    height: 38px
+.gradient
+    background: -webkit-linear-gradient(#F5514D, #EE8493,#6F8FB5)
+    -webkit-background-clip: text
+    -webkit-text-fill-color: transparent
+    font-size: 1.5em
+    font-style: bold
+    font-weight: 700
 
+//
 .general-button
     background-color: $color-primary
     color: $color-white
     @extend %btn-general
     border: none
+
+.contact-button
+    background-color: $color-primary
+    color: $color-white
+    @extend %btn-contact
+    border: none
+
+.seeall-button
+    background-color: $color-bg-transparent
+    color: $color-white
+    @extend %btn-seeall
+    border: none
+    border: 1px solid $colorblanco
+
+.seeall-button:hover
+    background-color: $color-primary
 
 .secondary-button
     background-color: $color-bg-reverse
@@ -134,6 +280,23 @@
     border-radius: 10px
     border: 1px solid rgba(255, 255, 255, 0.15)
     color: $color-white
+
+.accordion-button::after
+    background-image: $accordion-button-active-icon !important
+
+.accordion-button:not(.collapsed)::after
+    background-image: $accordion-button-icon !important
+
+.accordion-button
+    color: #ffffff !important
+    text-align: left !important
+    background-color: #0000 !important
+    border: 0 !important
+    border-radius: 0 !important
+
+.accordion-item
+    background-color: #0000 !important
+    border: none !important
 
 @media screen and (min-width: 1400px)
     .container
